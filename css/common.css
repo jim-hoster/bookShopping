@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+/* 最小宽度 */
+.container-fluid {
+    width: 100%;
+    min-width: 1200px;
+}
+
+/* 版心 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 浮动 */
+/* 左浮动 */
+.fl {
+    float: left;
+}
+
+/* 右浮动 */
+.fr {
+    float: right;
+}
+
+/* 清除浮动 */
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1；
+}
+
+/* 文字大小 */
+.fs14 {
+    font-size: 14px;
+}
+
+.fs16 {
+    font-size: 16px;
+}
+
+.fs18 {
+    font-size: 18px;
+}
+
+.fs20 {
+    font-size: 20px;
+}
+
+.fs22 {
+    font-size: 22px;
+}
+
+.fs22 {
+    font-size: 24px;
+}
+
+
+/* 字体颜色 */
+.cf6 {
+    color: #ff6600
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.red {
+    color: red;
+}
+
+.b3 {
+    color: #b3b3b3
+}
+
+.gold {
+    color: #deb821
+}
+
+
+
+/* 边距 */
+.mt40 {
+    margin-top: 40px;
+}
+
+.mr16 {
+    margin-right: 16px;
+}
+
+/* 段落前空格 */
+.ti8 {
+    text-indent: 8px;
+}
+
+/* 添加下划线 */
+.td {
+    text-decoration: line-through;
+}
+
+/* 字体加粗 */
+.fw {
+    font-weight: bold;
+}
+
+/* 宽高 */
+.product-img1 {
+    width: 171px;
+    height: 334px;
+}
+
+.product-img2 {
+    width: 171px;
+    height: 154px;
+}
+
+#head {
+    height: 28px;
+    line-height: 28px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+
+#head>div:nth-child(1) {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    z-index: 100;
+}
+
+.address {
+    color: white;
+    margin-left: 210px;
+}
+
+.welcome a {
+    color: #ff6600;
+
+}
+
+/* 公共页面样式开始 */
+.search-box {
+    margin-top: 4px;
+}
+
+.search-box div {
+    width: 100px;
+}
+
+.search-box>div:nth-child(1) {
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ebebeb;
+    text-align: center;
+}
+
+.search-box>div:nth-child(2) {
+    height: 36px;
+    line-height: 36px;
+    background: url(../imgs/bgicon.png) no-repeat 6px -41px #ff6600;
+    margin-left: 36px;
+    text-indent: 46px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search-text {
+    height: 32px;
+    width: 400px;
+    text-indent: 10px;
+    outline: none;
+    border: 2px solid #ff6600;
+
+}
+
+.search-btn {
+    height: 36px;
+    width: 48px;
+    background: url(../imgs/bgicon.png) no-repeat -2px 0;
+    outline: none;
+    border: 2px solid #ff6600;
+}
+
+/* 头部导航栏 */
+#nav {
+    padding-top: 24px;
+    padding-right: 110px;
+}
+
+#nav li a {
+    margin-right: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+/* 公共页面样式结束 */
+
+/* 乐购尾部 */
+.foot {
+    height: 94px;
+    background-color: #cccccc;
+    border-top: 6px solid #ff6600;
+    position: relative;
+
+}
+
+.foot div>img {
+    padding-right: 90px;
+}
+
+.foot>div>div {
+    width: 910px;
+    margin: 0 auto;
+    line-height: 94px;
+}
+
+.foot ul {
+    float: right;
+    text-align: center;
+    padding-top: 36px;
+    padding-right: 60px;
+}
+
+.foot ul li {
+    padding-bottom: 12px;
+}
+
+.link{
+    text-align: center;
+    margin-top: 46px;
+    margin-bottom: 24px;
+}
+
+.link>a {
+    color: black;
+    padding: 0 10px;
+    border-right: 1px solid black;
+}
+
+.copy {
+    text-align: center;
+    padding-bottom: 100px;
+}

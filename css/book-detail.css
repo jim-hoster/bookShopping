@@ -1,0 +1,409 @@
+@charset "UTF-8";
+
+/* 菜单栏 */
+.bookmeau-left {
+    width: 1000px;
+    height: 430px;
+}
+
+.bookmeau-right {
+    width: 200px;
+    height: 430px;
+}
+
+.bookmeau-right>h2 {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: green;
+    color: white;
+
+}
+
+.br-text {
+    width: 116px;
+    height: 143px;
+
+}
+
+.bookmeau-right>ul>li {
+    position: relative;
+    height: 48px;
+    overflow: hidden;
+    border-bottom: 1px solid #42454a;
+}
+
+.bookmeau-right>ul>li:first-child {
+    height: 100px;
+}
+
+.bookmeau-right>ul>li:last-child {
+    border-bottom: none;
+}
+
+.bookmeau-right>ul>li>span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.bookmeau-right img {
+    width: 84px;
+    height: 96px;
+
+}
+
+.bookmeau-ad {
+    width: 1200px;
+    height: 90px;
+}
+
+/* 图书折扣区 */
+.book-discount {
+    margin-top: 24px;
+
+}
+
+.book-discount h2 {
+    width: 188px;
+    height: 24px;
+    padding: 14px;
+    color: white;
+    font-size: 22px;
+    background-color: #ff6600;
+
+}
+
+.book-discount-title {
+    border-bottom: 6px solid #ff6600;
+
+
+}
+
+.bd-detail>p {
+    text-indent: 6px;
+}
+
+/* 图书折扣区图书详情页 */
+.bd-detail-box {
+    padding: 0 20px;
+}
+
+.bd-detail-box>div {
+    width: 150px;
+    margin-right: 82px;
+    margin-bottom: 10px;
+}
+
+.bd-detail {
+    position: relative;
+}
+
+
+.bd-detail-box>div:hover {
+    box-shadow: 1px 2px 5px 7px gainsboro;
+
+}
+
+.bd-detail-img {
+    width: 120px;
+    height: 126px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.bd-detail>p:nth-child(4)>span:nth-child(1) {
+    font-size: 10px;
+    color: green;
+}
+
+.bd-detail>p:nth-child(4)>span:nth-child(2) {
+    font-size: 20px;
+    color: red;
+}
+
+.bd-detail>p:nth-child(5)>span:nth-child(1) {
+    font-size: 18px;
+    color: red;
+    padding-right: 10px;
+}
+
+.bd-detail>p:nth-child(5)>span:nth-child(2) {
+    font-size: 18px;
+    color: #c0c0c0;
+    text-decoration: line-through;
+}
+
+/* 新书上架 */
+.newBook {
+    margin-top: 40px;
+
+}
+
+/* 新书左边 */
+.newBook-left {
+    width: 900px;
+    height: 540px;
+}
+
+.nl-detail-box>div {
+    margin-right: 20px;
+    margin-top: 10px;
+    text-indent: 10px;
+
+}
+
+.nl-detail-box>div:hover {
+    box-shadow: 1px 2px 5px 7px gainsboro;
+
+}
+
+.nl-detail-title {
+    margin-bottom: 6px;
+}
+
+
+.nl-title {
+    width: 900px;
+    border-bottom: 6px solid #ff6600;
+
+}
+
+.nl-title>h3 {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.nl-title>h3>span {
+    font-size: 24px;
+    padding: 8px;
+    background-color: #ff6600;
+    color: white;
+
+}
+
+
+
+/* 新书右边 */
+.newBook-right {
+    position: relative;
+    top: 42px;
+    border: 1px solid #c0c0c0;
+    padding-left: 10px;
+}
+
+.newBook-right>ul>li {
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.newBook-right>h3 {
+    width: 274px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+
+.nr-detail-box {
+    width: 250px;
+    border-bottom: 1px solid #c0c0c0;
+    padding-left: 10px;
+}
+
+.nr-detail-box>p {
+    font-size: 14px;
+}
+
+.nr-detail-text {
+    width: 100px;
+    height: 148px;
+    line-height: 20px;
+}
+
+.newBook-right .nr-detail {
+    display: none;
+}
+
+
+.nr-detail-box .nr-hidden {
+    display: none;
+}
+
+.nr-detail-box .nr-show {
+    display: block;
+}
+
+/* 独家提供 */
+
+/* 独家提供上边部分 */
+.provide {
+    border-bottom: 1px solid #42454a;
+    height: 510px;
+}
+
+.provide-top {
+    border-bottom: 6px solid #ff6600;
+}
+
+.pt-title {
+    font-size: 20px;
+    font-weight: bold;
+    height: 38px;
+    line-height: 41px;
+    letter-spacing: 3px;
+
+}
+
+.pt-title>span {
+    display: inline-block;
+    background-color: #ff6600;
+    width: 36px;
+    height: 38px;
+    text-align: center;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.pt-nav>li {
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pn-active {
+    background-color: #ff6600;
+}
+
+/* 独家提供下边部分 */
+.provide-bottom {
+    height: 520px;
+}
+
+.pr-slide {
+    display: none;
+}
+
+.provide-bottom .pr-slide:nth-child(1) {
+    display: block;
+}
+
+.pr-slide-detail>div {
+    margin-right: 40px;
+    margin-top: 10px;
+    text-indent: 10px;
+
+}
+
+.pr-slide-detail>div>img {
+    width: 150px !important;
+    height: 150px !important;
+}
+
+.pr-slide-detail>div:hover {
+    box-shadow: 1px 2px 5px 7px gainsboro;
+
+}
+
+.nl-detail-title {
+    margin-bottom: 6px;
+}
+
+.pr-slide-ul {
+    padding-left: 20px;
+
+}
+
+/* 猜你喜欢 */
+
+/* 上部 */
+
+.like {
+    margin-top: 40px;
+    height: 500px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.like-top {
+    border-bottom: 6px solid #ff6600;
+}
+
+.like-top>div {
+    height: 38px;
+    line-height: 38px;
+    font-weight: bold;
+
+}
+
+.like-top>div>span {
+    display: inline-block;
+    background-color: #ff6600;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+/* 下部分 */
+.like-bottom {
+    padding: 0 20px;
+}
+
+.like-bottom>div {
+    position: relative;
+    width: 170px;
+    height: 220px;
+    text-indent: 10px;
+    margin-right: 22px;
+    margin-top: 10px;
+}
+
+.like-bottom a>img {
+    width: 150px;
+    margin: 0 auto;
+
+}
+
+.like-bottom>div:hover {
+    box-shadow: 1px 2px 5px 7px gainsboro;
+
+}
+
+/* 人文社科 */
+
+.social>div {
+    padding: 26px 0
+
+}
+
+.social img {
+    width: 90px;
+    height: 90px;
+}
+
+.sale {
+    background-color: red;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+
+.social>div:hover {
+    box-shadow: 1px 2px 5px 7px gainsboro;
+
+}
+
+.like-ad {
+    width: 1200px !important;
+    height: 92px !important;
+}

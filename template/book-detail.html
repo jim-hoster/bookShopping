@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<!-- 公共页面顶部开始 -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张琪购物商城项目-产品详情页</title>
+    <!-- 重置样式表 -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- 公共样式表 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 菜单轮播样式表 -->
+    <link rel="stylesheet" href="../css/slide.css">
+    <!-- 当前样式表 -->
+    <link rel="stylesheet" href="../css/book-detail.css">
+    <!-- 引入jq框架 -->
+    <script src="../lib/jquery.min.js"></script>
+    <!-- 引入jq轮播框架 -->
+    <script src="../lib/jquery.slidebox.js"></script>
+    <!-- 引入当前js脚本 -->
+    <script src="../javascripts/book-detail.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+
+    <div id="head" class="container-fluid">
+        <div class="container clearfix">
+            <img src="../imgs/logo.jpg" alt="" class="fl logo">
+            <a href="index.html" class="fl address">legou.cn</a>
+            <div class="fr welcome">欢迎光临<a href="login.html">乐购</a>,请登录\<a href="sign.html"> 注册</a></div>
+        </div>
+    </div>
+    <!-- 头部搜索框 -->
+    <div class="search-box container clearfix">
+        <div class="fr ">
+            <a href="#" class="black ">我的订单</a>
+        </div>
+        <div class="fr">
+            <a href="" class="white">购物车3</a>
+        </div>
+        <form action="" class="fr  searchForm">
+            <input type="text" name="search" class="search-text fl" placeholder="设计中的意义不在于外表，而在于内涵">
+            <input type="submit" value="" class="search-btn  fl">
+        </form>
+    </div>
+    <!-- 头部导航栏  -->
+    <ul class="clearfix container" id="nav">
+
+        <li class="fr"><a href="#">电器城</a></li>
+        <li class="fr"><a href="#">海外购</a></li>
+        <li class="fr"><a href="#">地方特产</a></li>
+        <li class="fr"><a href="#">创意文具</a></li>
+        <li class="fr"><a href="#">家具</a></li>
+        <li class="fr"><a href="#">婴幼童</a></li>
+        <li class="fr"><a href="#">运动户外</a></li>
+        <li class="fr"><a href="#">服装</a></li>
+        <li class="fr"><a href="#">原创文学</a></li>
+        <li class="fr"><a href="#">电子书</a></li>
+        <li class="fr"><a href="book-detail.html">图书</a></li>
+    </ul>
+    <!-- 公共页面顶部结束 -->
+    <div class="bookmeau clearfix container">
+        <div class="fl bookmeau-left">
+            <!-- 轮播图 -->
+            <div class="slidebox fl  bookmeau-slide">
+                <ul class="innerwrapper">
+                    <li>
+                        <a href="#">
+                            <img src="../imgs/banner(1).jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../imgs/banner(2).jpg" />
+                        </a>
+                    </li>
+                </ul>
+                <ul class="controls">
+                    <li class="current">1</li>
+                    <li>2</li>
+                </ul>
+                <span class="btnleft"></span>
+                <span class="btnright"></span>
+            </div>
+
+        </div>
+        <div class="fr bookmeau-right">
+            <h2>热卖畅销</h2>
+            <ul>
+                <li class="clearfix">
+                    <span>1</span>
+                    <img src="../imgs/booklist (3).jpg" alt="" class="fl">
+                    <div class="fr br-text">《三体》刘慈欣一场科幻的史诗风暴</div>
+                </li>
+                <li class="clearfix">
+                    <span>2</span>
+                    <img src="../imgs/booklist (8).jpg" alt="" class="fl">
+                    <div class="fr br-text">《三体》刘慈欣一场科幻的史诗风暴</div>
+                </li>
+                <li class="clearfix">
+                    <span>3</span>
+                    <img src="../imgs/booklist (9).jpg" alt="" class="fl">
+                    <div class="fr br-text">《三体》刘慈欣一场科幻的史诗风暴</div>
+                </li>
+                <li class="clearfix">
+                    <span>4</span>
+                    <img src="../imgs/booklist (12).jpg" alt="" class="fl">
+                    <div class="fr br-text">《三体》刘慈欣一场科幻的史诗风暴</div>
+                </li>
+                <li class="clearfix">
+                    <span>5</span>
+                    <img src="../imgs/booklist (14).jpg" alt="" class="fl">
+                    <div class="fr br-text">《三体》刘慈欣一场科幻的史诗风暴</div>
+                </li>
+                <li class="clearfix">
+                    <span>6</span>
+                    <img src="../imgs/booklist (6).jpg" alt="" class="fl">
+                    <div class="fr br-text">《三体》刘慈欣一场科幻的史诗风暴</div>
+                </li>
+                <li class="clearfix">
+                    <span>7</span>
+                    <img src="../imgs/booklist (6).jpg" alt="" class="fl">
+                    <div class="fr br-text">《三体》刘慈欣一场科幻的史诗风暴</div>
+                </li>
+            </ul>
+        </div>
+        <!-- 广告图 -->
+        <img src="../imgs/banner-111.jpg" alt="" class="bookmeau-ad">
+    </div>
+    <!-- 乐购图书折扣区 -->
+
+    <div class="container book-discount">
+        <div class="book-discount-title">
+            <h2>乐购.图书折扣区</h2>
+        </div>
+        <div></div>
+        <div class="bd-detail-box clearfix">
+            <div class="fl bd-detail">
+                <a href="book-product-detail.html"><img src="../imgs/bd1.png" alt="" class="bd-detail-img">
+                    <img src="../imgs/index05_18.jpg" alt=""></a>
+                <p>百年孤独：马尔克斯</p>
+                <p><span>推荐：</span><span>❤❤❤❤❤</span></p>
+                <p><span>￥:30</span><span>￥46</span></p>
+            </div>
+            <div class="fl bd-detail">
+                <a href="book-product-detail.html"><img src="../imgs/booklist (5).jpg" alt="" class="bd-detail-img"></a>
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p>白夜行：东野圭吾</p>
+                <p><span>推荐：</span><span>❤❤❤❤❤</span></p>
+                <p><span>￥:30</span><span>￥46</span></p>
+            </div>
+            <div class="fl bd-detail">
+                <img src="../imgs/booklist (8).jpg" alt="" class="bd-detail-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p>白夜行：东野圭吾</p>
+                <p><span>推荐：</span><span>❤❤❤❤❤</span></p>
+                <p><span>￥:30</span><span>￥46</span></p>
+            </div>
+            <div class="fl bd-detail">
+                <img src="../imgs/booklist (7).jpg" alt="" class="bd-detail-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p>白夜行：东野圭吾</p>
+                <p><span>推荐：</span><span>❤❤❤❤❤</span></p>
+                <p><span>￥:30</span><span>￥46</span></p>
+            </div>
+            <div class="fl bd-detail">
+                <img src="../imgs/booklist (4).jpg" alt="" class="bd-detail-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p>白夜行：东野圭吾</p>
+                <p><span>推荐：</span><span>❤❤❤❤❤</span></p>
+                <p><span>￥:30</span><span>￥46</span></p>
+            </div>
+            <div class="fl bd-detail">
+                <img src="../imgs/booklist (3).jpg" alt="" class="bd-detail-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p>白夜行：东野圭吾</p>
+                <p><span>推荐：</span><span>❤❤❤❤❤</span></p>
+                <p><span>￥:30</span><span>￥46</span></p>
+            </div>
+            <div class="fl bd-detail">
+                <img src="../imgs/booklist (9).jpg" alt="" class="bd-detail-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p>白夜行：东野圭吾</p>
+                <p><span>推荐：</span><span>❤❤❤❤❤</span></p>
+                <p><span>￥:30</span><span>￥46</span></p>
+            </div>
+            <div class="fl bd-detail">
+                <img src="../imgs/booklist (10).jpg" alt="" class="bd-detail-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p>白夜行：东野圭吾</p>
+                <p><span>推荐：</span><span>❤❤❤❤❤</span></p>
+                <p><span>￥:30</span><span>￥46</span></p>
+            </div>
+            <div class="fl bd-detail">
+                <img src="../imgs/booklist (8).jpg" alt="" class="bd-detail-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p>白夜行：东野圭吾</p>
+                <p><span>推荐：</span><span>❤❤❤❤❤</span></p>
+                <p><span>￥:30</span><span>￥46</span></p>
+            </div>
+            <div class="fl bd-detail">
+                <img src="../imgs/booklist (12).jpg" alt="" class="bd-detail-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p>白夜行：东野圭吾</p>
+                <p><span>推荐：</span><span>❤❤❤❤❤</span></p>
+                <p><span>￥:30</span><span>￥46</span></p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- 新书上架 -->
+    <div class="newBook clearfix container">
+        <div class="newBook-left fl">
+            <div class="nl-title">
+                <h3><span>新</span>书上架</h3>
+            </div>
+            <!-- 左边新书详情 -->
+            <div class="clearfix nl-detail-box">
+                <div class="fl">
+                    <img src="../imgs/booklist (6).jpg" alt="">
+                    <p class="nl-detail-title">查理.斯密斯</p>
+                    <p class="b3">中国邮电出版社</p>
+                    <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                </div>
+                <div class="fl">
+                    <img src="../imgs/booklist (8).jpg" alt="">
+                    <p class="nl-detail-title">查理.斯密斯</p>
+                    <p class="b3">中国邮电出版社</p>
+                    <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                </div>
+                <div class="fl">
+                    <img src="../imgs/booklist (12).jpg" alt="">
+                    <p class="nl-detail-title">查理.斯密斯</p>
+                    <p class="b3">中国邮电出版社</p>
+                    <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                </div>
+                <div class="fl">
+                    <img src="../imgs/booklist (8).jpg" alt="">
+                    <p class="nl-detail-title">查理.斯密斯</p>
+                    <p class="b3">中国邮电出版社</p>
+                    <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                </div>
+                <div class="fl">
+                    <img src="../imgs/booklist (10).jpg" alt="">
+                    <p class="nl-detail-title">查理.斯密斯</p>
+                    <p class="b3">中国邮电出版社</p>
+                    <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                </div>
+                <div class="fl">
+                    <img src="../imgs/booklist (13).jpg" alt="">
+                    <p class="nl-detail-title">查理.斯密斯</p>
+                    <p class="b3">中国邮电出版社</p>
+                    <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                </div>
+                <div class="fl">
+                    <img src="../imgs/booklist (9).jpg" alt="">
+                    <p class="nl-detail-title">查理.斯密斯</p>
+                    <p class="b3">中国邮电出版社</p>
+                    <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                </div>
+                <div class="fl">
+                    <img src="../imgs/booklist (6).jpg" alt="">
+                    <p class="nl-detail-title">查理.斯密斯</p>
+                    <p class="b3">中国邮电出版社</p>
+                    <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                </div>
+                <div class="fl">
+                    <img src="../imgs/booklist (7).jpg" alt="">
+                    <p class="nl-detail-title">查理.斯密斯</p>
+                    <p class="b3">中国邮电出版社</p>
+                    <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                </div>
+                <div class="fl">
+                    <img src="../imgs/booklist (8).jpg" alt="">
+                    <p class="nl-detail-title">查理.斯密斯</p>
+                    <p class="b3">中国邮电出版社</p>
+                    <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                </div>
+            </div>
+        </div>
+        <!-- 新书上架右边 -->
+        <div class="newBook-right fr">
+            <h3>主编推荐</h3>
+            <ul class="clearfix">
+                <li class="newBook-right-current">
+                    <span class="fl">1</span>
+                    <div class="fl nr-detail-box">
+                        <p class="nr-hidden">从你的全世界路过，不留下一丝丝痕迹</p>
+                        <div class="clearfix nr-detail nr-show">
+                            <img src="../imgs/booklist (8).jpg" alt="" class="fl">
+                            <div class="fl nr-detail-text">
+                                从你的全世界路过，入选央视好书的80后好作品，王家卫极力推荐，1500次万次转发，超4亿次阅读
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <span class="fl">2</span>
+                    <div class="fl nr-detail-box">
+                        <p>从你的全世界路过，不留下一</p>
+                        <div class="clearfix nr-detail active ">
+                            <img src="../imgs/booklist (6).jpg" alt="" class="fl">
+                            <div class="fl nr-detail-text">
+                                从你的全世界路过，入选央视好书的80后好作品，王家卫极力推荐，1500次万次转发，超4亿次阅读
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <span class="fl">3</span>
+                    <div class="fl nr-detail-box">
+                        <p>从你的全世界路过，不留下一</p>
+                        <div class="clearfix nr-detail active ">
+                            <img src="../imgs/booklist (6).jpg" alt="" class="fl">
+                            <div class="fl nr-detail-text">
+                                从你的全世界路过，入选央视好书的80后好作品，王家卫极力推荐，1500次万次转发，超4亿次阅读
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li>
+                    <span class="fl">4</span>
+                    <div class="fl nr-detail-box">
+                        <p>从你的全世界路过，不留下一</p>
+                        <div class="clearfix nr-detail active ">
+                            <img src="../imgs/booklist (6).jpg" alt="" class="fl">
+                            <div class="fl nr-detail-text">
+                                从你的全世界路过，入选央视好书的80后好作品，王家卫极力推荐，1500次万次转发，超4亿次阅读
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li>
+                    <span class="fl">5</span>
+                    <div class="fl nr-detail-box">
+                        <p>从你的全世界路过，不留下一</p>
+                        <div class="clearfix nr-detail active ">
+                            <img src="../imgs/booklist (6).jpg" alt="" class="fl">
+                            <div class="fl nr-detail-text">
+                                从你的全世界路过，入选央视好书的80后好作品，王家卫极力推荐，1500次万次转发，超4亿次阅读
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li>
+                    <span class="fl">6</span>
+                    <div class="fl nr-detail-box">
+                        <p>从你的全世界路过，不留下一</p>
+                        <div class="clearfix nr-detail active ">
+                            <img src="../imgs/booklist (6).jpg" alt="" class="fl">
+                            <div class="fl nr-detail-text">
+                                从你的全世界路过，入选央视好书的80后好作品，王家卫极力推荐，1500次万次转发，超4亿次阅读
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li>
+                    <span class="fl">7</span>
+                    <div class="fl nr-detail-box">
+                        <p>从你的全世界路过，不留下一</p>
+                        <div class="clearfix nr-detail active ">
+                            <img src="../imgs/booklist (6).jpg" alt="" class="fl">
+                            <div class="fl nr-detail-text">
+                                从你的全世界路过，入选央视好书的80后好作品，王家卫极力推荐，1500次万次转发，超4亿次阅读
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li>
+                    <span class="fl">8</span>
+                    <div class="fl nr-detail-box">
+                        <p>从你的全世界路过，不留下一</p>
+                        <div class="clearfix nr-detail active ">
+                            <img src="../imgs/booklist (6).jpg" alt="" class="fl">
+                            <div class="fl nr-detail-text">
+                                从你的全世界路过，入选央视好书的80后好作品，王家卫极力推荐，1500次万次转发，超4亿次阅读
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- 独家提供 -->
+    <div class="container provide">
+        <div class=" provide-top clearfix">
+            <div class="fl pt-title">
+                <span class="fs22 white">独</span>家提供</div>
+            <ul class="fr clearfix pt-nav">
+                <li class="fl pn-active">货币金融</li>
+                <li class="fl">社会文学</li>
+                <li class="fl">教学参辅</li>
+                <li class="fl">生活</li>
+                <li class="fl">小说</li>
+            </ul>
+        </div>
+
+        <div class="provide-bottom">
+
+            <!-- 独家提供轮播图 -->
+            <div class="slidebox fl  pr-slide">
+                <ul class="innerwrapper pr-slide-ul">
+                    <li>
+                        <div class="clearfix  pr-slide-detail">
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+
+
+
+
+
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix  pr-slide-detail">
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+                <ul class="controls">
+                    <li class="current">1</li>
+                    <li>2</li>
+                </ul>
+                <span class="btnleft"></span>
+                <span class="btnright"></span>
+            </div>
+            <div class="slidebox fl  pr-slide">
+                <ul class="innerwrapper pr-slide-ul">
+                    <li>
+                        <div class="clearfix  pr-slide-detail">
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (4).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (4).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (4).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (4).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (4).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (4).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix  pr-slide-detail">
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+                <ul class="controls">
+                    <li class="current">1</li>
+                    <li>2</li>
+                </ul>
+                <span class="btnleft"></span>
+                <span class="btnright"></span>
+            </div>
+            <div class="slidebox fl  pr-slide">
+                <ul class="innerwrapper pr-slide-ul">
+                    <li>
+                        <div class="clearfix  pr-slide-detail">
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix  pr-slide-detail">
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (8).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+                <ul class="controls">
+                    <li class="current">1</li>
+                    <li>2</li>
+                </ul>
+                <span class="btnleft"></span>
+                <span class="btnright"></span>
+            </div>
+            <div class="slidebox fl  pr-slide">
+                <ul class="innerwrapper pr-slide-ul">
+                    <li>
+                        <div class="clearfix  pr-slide-detail">
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (10).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (10).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (10).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (10).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (10).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (10).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (10).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (10).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (10).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+
+
+
+
+
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix  pr-slide-detail">
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+                <ul class="controls">
+                    <li class="current">1</li>
+                    <li>2</li>
+                </ul>
+                <span class="btnleft"></span>
+                <span class="btnright"></span>
+            </div>
+            <div class="slidebox fl  pr-slide">
+                <ul class="innerwrapper pr-slide-ul">
+                    <li>
+                        <div class="clearfix  pr-slide-detail">
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (12).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (12).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (12).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (12).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (12).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (12).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (12).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (12).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (12).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (12).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (12).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+
+                        <div class="clearfix  pr-slide-detail">
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                            <div class="fl">
+                                <img src="../imgs/booklist (6).jpg" alt="">
+                                <p class="nl-detail-title">查理.斯密斯</p>
+                                <p class="b3">中国邮电出版社</p>
+                                <p><span class="red">￥49</span><del class="b3">￥79</del></p>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+                <ul class="controls">
+                    <li class="current">1</li>
+                    <li>2</li>
+                </ul>
+                <span class="btnleft"></span>
+                <span class="btnright"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 猜你喜欢 -->
+
+    <div class="container like">
+        <div class="like-top clearfix">
+            <div class="fl fs20"><span class="fs22 white">猜</span>你喜欢</div>
+            <div class="fr fs16">换一批</div>
+
+        </div>
+        <div class="like-bottom">
+            <div class="fl">
+                <a href="#"><img src="../imgs/booklist (9).jpg" alt=""></a>
+                <p class="fs14 black">马尔克斯</p>
+                <p class="fs14 b3">中国人文出版社</p>
+                <p><span class="fs14 red">￥100</span><del class="fs14 b3">￥200</del></p>
+            </div>
+
+            <div class="fl">
+                <a href="#"><img src="../imgs/booklist (9).jpg" alt=""></a>
+                <p class="fs14 black">马尔克斯</p>
+                <p class="fs14 b3">中国人文出版社</p>
+                <p><span class="fs14 red">￥100</span><del class="fs14 b3">￥200</del></p>
+            </div>
+
+            <div class="fl">
+                <a href="#"><img src="../imgs/booklist (9).jpg" alt=""></a>
+                <p class="fs14 black">马尔克斯</p>
+                <p class="fs14 b3">中国人文出版社</p>
+                <p><span class="fs14 red">￥100</span><del class="fs14 b3">￥200</del></p>
+            </div>
+
+            <div class="fl">
+                <a href="#"><img src="../imgs/booklist (9).jpg" alt=""></a>
+                <p class="fs14 black">马尔克斯</p>
+                <p class="fs14 b3">中国人文出版社</p>
+                <p><span class="fs14 red">￥100</span><del class="fs14 b3">￥200</del></p>
+            </div>
+
+            <div class="fl">
+                <a href="#"><img src="../imgs/booklist (9).jpg" alt=""></a>
+                <p class="fs14 black">马尔克斯</p>
+                <p class="fs14 b3">中国人文出版社</p>
+                <p><span class="fs14 red">￥100</span><del class="fs14 b3">￥200</del></p>
+            </div>
+
+            <div class="fl">
+                <a href="#"><img src="../imgs/booklist (9).jpg" alt=""></a>
+                <p class="fs14 black">马尔克斯</p>
+                <p class="fs14 b3">中国人文出版社</p>
+                <p><span class="fs14 red">￥100</span><del class="fs14 b3">￥200</del></p>
+            </div>
+
+
+
+            <div class="fl">
+                <a href="#"><img src="../imgs/booklist (9).jpg" alt=""></a>
+                <p class="fs14 black">马尔克斯</p>
+                <p class="fs14 b3">中国人文出版社</p>
+                <p><span class="fs14 red">￥100</span><del class="fs14 b3">￥200</del></p>
+            </div>
+
+            <div class="fl">
+                <a href="#"><img src="../imgs/booklist (9).jpg" alt=""></a>
+                <p class="fs14 black">马尔克斯</p>
+                <p class="fs14 b3">中国人文出版社</p>
+                <p><span class="fs14 red">￥100</span><del class="fs14 b3">￥200</del></p>
+            </div>
+
+            <div class="fl">
+                <a href="#"><img src="../imgs/booklist (9).jpg" alt=""></a>
+                <p class="fs14 black">马尔克斯</p>
+                <p class="fs14 b3">中国人文出版社</p>
+                <p><span class="fs14 red">￥100</span><del class="fs14 b3">￥200</del></p>
+            </div>
+
+            <div class="fl">
+                <a href="#"><img src="../imgs/booklist (9).jpg" alt=""></a>
+                <p class="fs14 black">马尔克斯</p>
+                <p class="fs14 b3">中国人文出版社</p>
+                <p><span class="fs14 red">￥100</span><del class="fs14 b3">￥200</del></p>
+            </div>
+
+            <div class="fl">
+                <a href="#"><img src="../imgs/booklist (9).jpg" alt=""></a>
+                <p class="fs14 black">马尔克斯</p>
+                <p class="fs14 b3">中国人文出版社</p>
+                <p><span class="fs14 red">￥100</span><del class="fs14 b3">￥200</del></p>
+            </div>
+
+            <div class="fl">
+                <a href="#"><img src="../imgs/booklist (9).jpg" alt=""></a>
+                <p class="fs14 black">马尔克斯</p>
+                <p class="fs14 b3">中国人文出版社</p>
+                <p><span class="fs14 red">￥100</span><del class="fs14 b3">￥200</del></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 人文社科 -->
+    <div class="container clearfix social">
+        <div class="fl clearfix">
+            <div class="fl">
+                <h2 class="fs1">人文社科精选</h2>
+                <p class="fs14 b3">书好价优</p>
+                <p class="fs14 white sale">满三件折上7折</p>
+            </div>
+
+            <a href="#" class="fr">
+                <img src="../imgs/booklist (3).jpg" alt="">
+            </a>
+
+        </div>
+
+        <div class="fl clearfix">
+            <div class="fl">
+                <h2 class="fs1">人文社科精选</h2>
+                <p class="fs14 b3">书好价优</p>
+                <p class="fs14 white sale">满三件折上7折</p>
+            </div>
+            <a href="#" class="fr">
+                <img src="../imgs/booklist (3).jpg" alt="">
+            </a>
+
+        </div>
+
+        <div class="fl clearfix">
+            <div class="fl">
+                <h2 class="fs1">人文社科精选</h2>
+                <p class="fs14 b3">书好价优</p>
+                <p class="fs14 white sale">满三件折上7折</p>
+            </div>
+            <a href="#" class="fr">
+                <img src="../imgs/booklist (3).jpg" alt="">
+            </a>
+
+        </div>
+
+        <div class="fl clearfix">
+            <div class="fl">
+                <h2 class="fs1">人文社科精选</h2>
+                <p class="fs14 b3">书好价优</p>
+                <p class="fs14 white sale">满三件折上7折</p>
+            </div>
+            <a href="#" class="fr">
+                <img src="../imgs/booklist (3).jpg" alt="">
+            </a>
+
+        </div>
+        <div class="fl clearfix">
+            <div class="fl">
+                <h2 class="fs1">人文社科精选</h2>
+                <p class="fs14 b3">书好价优</p>
+                <p class="fs14 white sale">满三件折上7折</p>
+            </div>
+            <a href="#" class="fr">
+                <img src="../imgs/booklist (3).jpg" alt="">
+            </a>
+
+        </div>
+        <div class="fl clearfix">
+            <div class="fl">
+                <h2 class="fs1">人文社科精选</h2>
+                <p class="fs14 b3">书好价优</p>
+                <p class="fs14 white sale">满三件折上7折</p>
+            </div>
+            <a href="#" class="fr">
+                <img src="../imgs/booklist (3).jpg" alt="">
+            </a>
+
+        </div>
+
+        <img src="../imgs/banner-111.jpg" alt="" class="like-ad">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  乐购尾部-->
+    <div class="container-fluid foot">
+        <div class="container clearfix">
+            <div>
+                <img src="../imgs/222_11.png" alt="">
+                <img src="../imgs/222_13(1).png" alt="">
+                <img src="../imgs/222_15.png" alt="">
+                <img src="../imgs/222_11.png" alt="">
+            </div>
+            <ul>
+                <li>
+                    <img src="../imgs/logo_00.png" alt="">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>商家服务</h3>
+                </li>
+                <li>商家中心</li>
+                <li>运营服务</li>
+                <li>加入尾巴汇</li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>退换货</h3>
+                </li>
+                <li>自动深情退换货</li>
+                <li>退换货进度查询</li>
+                <li>退款方式和时间</li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>订单服务</h3>
+                </li>
+                <li>订单配送查询</li>
+                <li>订单状态说明</li>
+                <li>自动取消订单</li>
+                <li>自动修改订单</li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>支付方式</h3>
+                </li>
+                <li>购物流程</li>
+                <li>发票制度</li>
+                <li>账户管理</li>
+                <li>会员优惠</li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>购物指南</h3>
+                </li>
+                <li>购物流程</li>
+                <li>发票制度</li>
+                <li>账户管理</li>
+                <li>会员优惠</li>
+            </ul>
+        </div>
+        <div class="link">
+            <a href="#">公司简介</a>
+            <a href="#">nevtor Retions</a>
+            <a href="#">网站联盟</a>
+            <a href="#">乐购招商</a>
+            <a href="#">机构销售</a>
+            <a href="#">手机乐购</a>
+            <a href="#">官方Blog</a>
+            <a href="#">热词搜索</a>
+        </div>
+        <div class="copy">Copyright&copy;乐购网2004-2016，All Right Reseverd</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+@charset "htf-8";
+
+.address{margin-left: 274px;}
+
+.login-in{
+    margin-top: 76px;
+    height: 500px;
+    background: url(../imgs/login-back.png) no-repeat;
+    position: relative;
+}
+
+.login-title{margin-bottom: 40px;
+    padding: 20px 20px;
+border-bottom: 1px solid #d9d9d9;
+}
+
+.login-title>li{cursor: pointer;font-weight: bold;}
+
+
+/* 左边扫码登录 */
+
+.ld-scan{display: none;}
+
+.ld-scan{margin: 20px 20px;
+text-align: center;
+position: relative;}
+
+.sss{padding-right: 20px;}
+
+.ld-scan>div{
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 253px;
+    height: 115px;
+
+
+ /*    width: 264ex; */
+
+}
+
+.ld-scan img{width: 114px;
+    cursor: pointer;
+
+}
+
+/* 右边账户登录 */
+
+.login-in>div{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 150px;
+    width: 290px;
+    height: 390px;
+    background-color: white;
+    font-size: 16px;
+}
+.active{color: #ff6600;}
+
+.ld-login input{
+    width: 210px;
+    height: 42px;
+    border: none;
+    outline: none;
+    text-indent: 10px;
+    font-size: 16px;
+}
+.ld-login>p{margin: 0 20px;
+    height: 42px;
+line-height: 42px;
+border: 1px solid #d9d9d9;
+margin-bottom: 28px;
+position: relative;}
+
+.ld-login>p>span{position: absolute;
+top: 32px;
+left: 36px;
+color: red;
+font-size: 12px;
+display: none;}
+
+.small-box{width: 14px;
+height: 14px;
+border: 1px solid #d9d9d9;
+margin-right: 10px;
+position: relative;
+cursor: pointer;}
+
+.small-box::after{
+    content: '√';
+    position: absolute;
+    top: -2px;
+    left: 1px;
+    display: none;
+    
+
+}
+
+.auto-login{height: 20px;
+line-height: 20px;
+padding: 0 20px;}
+
+.login-detail .submit{width: 250px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+font-size: 24px;
+color: white;
+background-color: #ff6600;
+letter-spacing: 20px;
+margin: 20px 20px;
+cursor: pointer;}
+
+.login-to{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-top: 1px solid #d9d9d9;
+}
+
+
+

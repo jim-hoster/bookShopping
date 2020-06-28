@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+.address {
+    margin-left: 272px;
+}
+
+.sign-foot {
+    background-color: none;
+}
+
+.login-top {
+    height: 77px;
+    line-height: 84px;
+    box-shadow: -6px 4px 4px 4px #bdb1b1
+}
+
+/* 注册详情 */
+.login-detail {
+    position: relative;
+    height: 740px;
+    border-bottom: 1px solid #bdb1b1;
+}
+
+.login-form {
+    width: 420px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.login-form>p {
+    padding: 10px;
+    border: 1px solid #bdb1b1;
+    margin: 54px 0;
+}
+
+.login-form>p span {
+    display: inline-block;
+    width: 120px;
+}
+
+.login-form>p input {
+    outline: none;
+    border: none;
+}
+
+.getCheck {
+    position: relative;
+}
+
+.getCheck>a {
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 98px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background-color: #a5a5a5;
+}
+
+.submit {
+    width: 420px;
+    left: 46px;
+    line-height: 46px;
+    text-align: center;
+    background-color: #ff6600;
+    color: white;
+    font-size: 32px;
+    outline: none;
+    border: none;
+}
+
+.agree {
+    display: block;
+    width: 420px !important;
+    height: 20px !important;
+    position: absolute;
+    top: 52px;
+    left: 0;
+}
+
+
+/* 表单验证 */
+label.error {
+    color: red;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#login-form p {
+    position: relative;
+}
+
+#login-form p label {
+    position: absolute;
+    top: 48px;
+    left: 112px;
+}
+
+/* 随机图片验证 */
+.verify{
+    position: relative;
+}
+
+#v_container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px !important;
+    height: 44px !important;
+}
+
+.vfy-message{
+    position: absolute;
+    top: 48px;
+    left: 120px;
+    font-size: 14px;
+    color: red;
+}
+

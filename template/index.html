@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张琪购物商城项目</title>
+    <!-- 重置样式表 -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- 公共样式表 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 菜单轮播样式表 -->
+    <link rel="stylesheet" href="../css/slide.css">
+    <!-- 当前样式表 -->
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- 引入jq框架 -->
+    <script src="../lib/jquery.min.js"></script>
+    <!-- 引入jq轮播框架 -->
+    <script src="../lib/jquery.slidebox.js"></script>
+    <!-- 引入当前js脚本 -->
+    <script src="../javascripts/index.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+
+    <div id="head" class="container-fluid">
+        <div class="container clearfix">
+            <img src="../imgs/logo.jpg" alt="" class="fl logo">
+            <a href="index.html" class="fl address">legou.cn</a>
+            <div class="fr welcome">欢迎光临<a href="login.html" target="_black">乐购</a>,请登录\<a href="sign.html"
+                    target="_black"> 注册</a></div>
+        </div>
+    </div>
+    <!-- 头部搜索框 -->
+    <div class="search-box container clearfix">
+        <div class="fr ">
+            <a href="#" class="black ">我的订单</a>
+        </div>
+        <div class="fr">
+            <a href="" class="white">购物车3</a>
+        </div>
+        <form action="" class="fr  searchForm">
+            <input type="text" name="search" class="search-text fl" placeholder="创意文具">
+            <input type="submit" value="" class="search-btn  fl">
+        </form>
+
+    </div>
+    <!-- 头部导航栏  -->
+    <ul class="clearfix container" id="nav">
+
+        <li class="fr"><a href="#">电器城</a></li>
+        <li class="fr"><a href="#">海外购</a></li>
+        <li class="fr"><a href="#">地方特产</a></li>
+        <li class="fr"><a href="#">创意文具</a></li>
+        <li class="fr"><a href="#">家具</a></li>
+        <li class="fr"><a href="#">婴幼童</a></li>
+        <li class="fr"><a href="#">运动户外</a></li>
+        <li class="fr"><a href="#">服装</a></li>
+        <li class="fr"><a href="#">原创文学</a></li>
+        <li class="fr"><a href="#">电子书</a></li>
+        <li class="fr"><a href="book-detail.html">图书</a></li>
+    </ul>
+    <!-- 菜单栏 -->
+    <div id="meau" class="container clearfix">
+        <ul class="fl meau-nav">
+            <!-- 一级菜单 -->
+            <li><a href="#">图书、</a>
+                <a href="#">电子书、</a>
+                <a href="#">童书</a>
+            </li>
+            <!-- 二级菜单 -->
+            <div class="sub-nav">
+                <ul>
+                    <li><span>图书馆&gt;&gt;</span><span>儿童图书馆&gt;&gt;</span><span>电子书馆&gt;&gt;</span></li>
+                    <li class="subnav-title">文艺</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文社科</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文管理</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">励志</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">教育</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">科技</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">生活</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">刊\进口书</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 一级菜单 -->
+            <li><a href="#">创意文具</a>
+            </li>
+            <!-- 二级菜单 -->
+            <div class="sub-nav">
+                <ul>
+                    <li><span>创意文具&gt;&gt;</span></li>
+                    <li class="subnav-title">文艺</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文社科</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文管理</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">励志</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">教育</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">科技</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">生活</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">刊\进口书</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- 一级菜单 -->
+            <li><a href="#">服饰</a>
+                <a href="#">内衣、</a>
+            </li>
+            <!-- 二级菜单 -->
+            <div class="sub-nav">
+                <ul>
+                    <li><span>服饰&gt;&gt;</span><span>内衣&gt;&gt;</span></li>
+                    <li class="subnav-title">文艺</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文社科</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文管理</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">励志</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">教育</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">科技</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">生活</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">刊\进口书</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- 一级菜单 -->
+            <li><a href="#">运动户外</a></li>
+            <!-- 二级菜单 -->
+            <div class="sub-nav">
+                <ul>
+                    <li><span>鞋包&gt;&gt;</span><span>箱包&gt;&gt;</span></li>
+                    <li class="subnav-title">文艺</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文社科</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文管理</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">励志</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">教育</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">科技</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">生活</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">刊\进口书</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <li><a href="#">孕、</a>
+                <a href="#">婴、</a>
+                <a href="#">童</a>
+            </li>
+            <div class="sub-nav">
+                <ul>
+                    <li><span>运动户外&gt;&gt;</span></li>
+                    <li class="subnav-title">文艺</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文社科</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文管理</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">励志</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">教育</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">科技</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">生活</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">刊\进口书</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+
+                </ul>
+            </div>
+            <li><a href="#">家居、</a>
+                <a href="#">家纺、</a>
+                <a href="#">汽车</a>
+            </li>
+            <div class="sub-nav">
+                <ul>
+                    <li><span>婴&gt;&gt;</span><span>幼&gt;&gt;</span><span>童&gt;&gt;</span></li>
+                    <li class="subnav-title">文艺</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文社科</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文管理</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">励志</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">教育</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">科技</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">生活</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">刊\进口书</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+
+                </ul>
+            </div>
+            <li><a href="#">家具、</a>
+                <a href="#">家装、</a>
+                <a href="#">康体</a>
+            </li>
+            <div class="sub-nav">
+                <ul>
+                    <li><span>家居&gt;&gt;</span><span>家纺&gt;&gt;</span><span>汽车&gt;&gt;</span></li>
+                    <li class="subnav-title">文艺</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文社科</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文管理</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">励志</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">教育</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">科技</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">生活</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">刊\进口书</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+
+                </ul>
+            </div>
+            <li><a href="#">美装、</a>
+                <a href="#">个人护理、</a>
+                <a href="#">成人</a>
+            </li>
+            <div class="sub-nav">
+                <ul>
+                    <li><span>图书馆&gt;&gt;</span><span>儿童图书馆&gt;&gt;</span><span>电子书馆&gt;&gt;</span></li>
+                    <li class="subnav-title">文艺</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文社科</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文管理</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">励志</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">教育</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">科技</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">生活</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">刊\进口书</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                </ul>
+            </div>
+            <li><a href="#">食品、</a>
+                <a href="#">茶酒、</a>
+                <a href="#">生鲜</a>
+            </li>
+            <div class="sub-nav">
+                <ul>
+                    <li><span>图书馆&gt;&gt;</span><span>儿童图书馆&gt;&gt;</span><span>电子书馆&gt;&gt;</span></li>
+                    <li class="subnav-title">文艺</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文社科</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文管理</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">励志</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">教育</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">科技</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">生活</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">刊\进口书</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+
+                </ul>
+            </div>
+            <li><a href="#">腕表、</a>
+                <a href="#">珠宝、</a>
+                <a href="#">眼镜</a>
+            </li>
+            <div class="sub-nav">
+                <ul>
+                    <li><span>图书馆&gt;&gt;</span><span>儿童图书馆&gt;&gt;</span><span>电子书馆&gt;&gt;</span></li>
+                    <li class="subnav-title">文艺</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文社科</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文管理</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">励志</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">教育</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">科技</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">生活</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">刊\进口书</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+
+                </ul>
+            </div>
+            <li><a href="#">手机、</a>
+                <a href="#">数码</a>
+            </li>
+            <div class="sub-nav">
+                <ul>
+                    <li><span>图书馆&gt;&gt;</span><span>儿童图书馆&gt;&gt;</span><span>电子书馆&gt;&gt;</span></li>
+                    <li class="subnav-title">文艺</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文社科</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文管理</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">励志</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">教育</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">科技</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">生活</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">刊\进口书</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+
+                </ul>
+            </div>
+            <li><a href="#">电脑办公</a>
+            </li>
+            <div class="sub-nav">
+                <ul>
+                    <li><span>图书馆&gt;&gt;</span><span>儿童图书馆&gt;&gt;</span><span>电子书馆&gt;&gt;</span></li>
+                    <li class="subnav-title">文艺</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文社科</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文管理</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">励志</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">教育</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">科技</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">生活</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">刊\进口书</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+
+                </ul>
+            </div>
+            <li><a href="#">家用电器</a>
+            </li>
+            <div class="sub-nav">
+                <ul>
+                    <li><span>图书馆&gt;&gt;</span><span>儿童图书馆&gt;&gt;</span><span>电子书馆&gt;&gt;</span></li>
+                    <li class="subnav-title">文艺</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文社科</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">人文管理</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">励志</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">教育</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">科技</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">生活</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+                    <li class="subnav-title">刊\进口书</li>
+                    <li><span>小说</span><span>文学</span><span>传记</span><span>青春</span><span>动漫</span><span>艺术</span><span>摄影</span><span>明星</span>
+                    </li>
+
+                </ul>
+            </div>
+        </ul>
+        <!-- 菜单轮播图 -->
+        <div class="meau-right fr">
+            <div class="slidebox fl meauSlide">
+                <ul class="innerwrapper">
+                    <li>
+                        <a href="#">
+                            <img src="../imgs/banner1.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../imgs/banner2.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../imgs/banner3.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../imgs/banner4.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../imgs/banner5.jpg" />
+                        </a>
+                    </li>
+                </ul>
+                <ul class="controls">
+                    <li class="current">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+                <span class="btnleft"></span>
+                <span class="btnright"></span>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- 乐购今日推荐 -->
+    <div class="container floor">
+        <div class="hot-title">
+            <h2 class="fs22 black">乐购.今日推荐</h2>
+        </div>
+        <div class="product-box clearfix">
+            <div class="fl product ">
+                <img src="../imgs/index06_05.jpg" alt="" class="product-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p class="black fs14 ti8">黑爵青蜂侠电竞游戏鼠标</p>
+                <p class="red fs14 ti8">全国联保，一年免费更换</p>
+                <p class="red fs18 ti8 price">￥2.99</p>
+              <!--   <p>单身狗倒计时</p>
+                <p></p> -->
+            </div>
+            <div class="fl product">
+                <img src="../imgs/index06_05.jpg" alt="" class="product-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p class="black fs14 ti8">黑爵青蜂侠电竞游戏鼠标</p>
+                <p class="red fs14 ti8">全国联保，一年免费更换</p>
+                <p class="red fs18 ti8 price">￥2.99</p>
+            </div>
+            <div class="fl product">
+                <img src="../imgs/index06_05.jpg" alt="" class="product-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p class="black fs14 ti8">黑爵青蜂侠电竞游戏鼠标</p>
+                <p class="red fs14 ti8">全国联保，一年免费更换</p>
+                <p class="red fs18 ti8 price">￥2.99</p>
+            </div>
+            <div class="fl product">
+                <img src="../imgs/index06_05.jpg" alt="" class="product-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p class="black fs14 ti8">黑爵青蜂侠电竞游戏鼠标</p>
+                <p class="red fs14 ti8">全国联保，一年免费更换</p>
+                <p class="red fs18 ti8 price">￥2.99</p>
+            </div>
+            <div class="fl product">
+                <img src="../imgs/index06_05.jpg" alt="" class="product-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p class="black fs14 ti8">黑爵青蜂侠电竞游戏鼠标</p>
+                <p class="red fs14 ti8">全国联保，一年免费更换</p>
+                <p class="red fs18 ti8 price">￥2.99</p>
+            </div>
+            <div class="fl product">
+                <img src="../imgs/index06_05.jpg" alt="" class="product-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p class="black fs14 ti8">黑爵青蜂侠电竞游戏鼠标</p>
+                <p class="red fs14 ti8">全国联保，一年免费更换</p>
+                <p class="red fs18 ti8 price">￥2.99</p>
+            </div>
+            <div class="fl product">
+                <img src="../imgs/index06_05.jpg" alt="" class="product-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p class="black fs14 ti8">黑爵青蜂侠电竞游戏鼠标</p>
+                <p class="red fs14 ti8">全国联保，一年免费更换</p>
+                <p class="red fs18 ti8 price">￥2.99</p>
+            </div>
+            <div class="fl product">
+                <img src="../imgs/index06_05.jpg" alt="" class="product-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p class="black fs14 ti8">黑爵青蜂侠电竞游戏鼠标</p>
+                <p class="red fs14 ti8">全国联保，一年免费更换</p>
+                <p class="red fs18 ti8 price">￥2.99</p>
+            </div>
+            <div class="fl product">
+                <img src="../imgs/index06_05.jpg" alt="" class="product-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p class="black fs14 ti8">黑爵青蜂侠电竞游戏鼠标</p>
+                <p class="red fs14 ti8">全国联保，一年免费更换</p>
+                <p class="red fs18 ti8 price">￥2.99</p>
+            </div>
+            <div class="fl product">
+                <img src="../imgs/index06_05.jpg" alt="" class="product-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p class="black fs14 ti8">黑爵青蜂侠电竞游戏鼠标</p>
+                <p class="red fs14 ti8">全国联保，一年免费更换</p>
+                <p class="red fs18 ti8 price">￥2.99</p>
+            </div>
+            <div class="fl product">
+                <img src="../imgs/index06_05.jpg" alt="" class="product-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p class="black fs14 ti8">黑爵青蜂侠电竞游戏鼠标</p>
+                <p class="red fs14 ti8">全国联保，一年免费更换</p>
+                <p class="red fs18 ti8 price">￥2.99</p>
+            </div>
+            <div class="fl product">
+                <img src="../imgs/index06_05.jpg" alt="" class="product-img">
+                <img src="../imgs/index05_18.jpg" alt="">
+                <p class="black fs14 ti8">黑爵青蜂侠电竞游戏鼠标</p>
+                <p class="red fs14 ti8">全国联保，一年免费更换</p>
+                <p class="red fs18 ti8 price">￥2.99</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- 乐购电子书 -->
+    <div class="book container clearfix mt40 floor">
+        <div class="book-left fl">
+            <div class="clearfix book-left-title">
+                <h2 class="fl fs22">图书电子书</h2>
+                <ul class="clearfix book-title fr">
+                    <li class="fr fs16 ">电子书</li>
+                    <li class="fr fs16">独家畅销</li>
+                    <li class="fr fs16 active">最新上架</li>
+                </ul>
+
+            </div>
+
+            <div class="clearfix">
+                <div class="fl">
+                    <img src="../imgs/index7_07.jpg" alt="">
+                    <ul class="book-meau clearfix">
+                        <li><a href="#" class="fl">中小学教辅</a><a href="#" class="fl">中外语</a><a href="#" class="fl">考试</a>
+                        </li>
+
+                        <li><a href="#" class="fl">小说</a><a href="#" class="fl">文学</a><a href="#" class="fl">青春文学</a>
+                        </li>
+
+                        <li><a href="#" class="fl">成功励志</a><a href="#" class="fl">管理</a><a href="#" class="fl">历史</a>
+                        </li>
+
+                        <li><a href="#" class="fl">哲学/宗教</a><a href="#" class="fl">亲子/家教</a><a href="#"
+                                class="fl">全部家教&gt;</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="fr clearfix book-detail">
+                    <div class="fl">
+                        <!-- 电子书轮播图 -->
+                        <div class="slidebox fl bookSlide">
+                            <ul class="innerwrapper">
+                                <li>
+                                    <a href="#">
+                                        <img src="../imgs/bookslide (1).jpg" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../imgs/bookslide (2).jpg" />
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="controls">
+                                <li class="current">1</li>
+                                <li>2</li>
+                            </ul>
+                            <span class="btnleft"></span>
+                            <span class="btnright"></span>
+                        </div>
+                        <!-- 轮播结束 -->
+                    </div>
+                    <div class="fl">
+                        <p class="fs16">奥运狂欢</p>
+                        <p class="red">10万种书，直降40%</p>
+                        <img src="../imgs/index09_05.jpg" alt="">
+                        <p><span class="red">￥49</span>&emsp;<span class="td b3">￥79</span></p>
+                    </div>
+                    <div class="fl">
+                        <p class="fs16">奥运狂欢</p>
+                        <p class="red">10万种书，直降40%</p>
+                        <img src="../imgs/index09_05.jpg" alt="">
+                        <p><span class="red">￥49</span>&emsp;<span class="td b3">￥79</span></p>
+                    </div>
+                    <div class="fl">
+                        <p class="fs16">奥运狂欢</p>
+                        <p class="red">10万种书，直降40%</p>
+                        <img src="../imgs/index09_05.jpg" alt="">
+                        <p><span class="red">￥49</span>&emsp;<span class="td b3">￥79</span></p>
+                    </div>
+
+                    <div class="fl">
+                        <p class="fs16">奥运狂欢</p>
+                        <p class="red">10万种书，直降40%</p>
+                        <img src="../imgs/index09_05.jpg" alt="">
+                        <p><span class="red">￥49</span>&emsp;<span class="td b3">￥79</span></p>
+                    </div>
+
+                    <div class="fl">
+                        <p class="fs16">奥运狂欢</p>
+                        <p class="red">10万种书，直降40%</p>
+                        <img src="../imgs/index09_05.jpg" alt="">
+                        <p><span class="red">￥49</span>&emsp;<span class="td b3">￥79</span></p>
+                    </div>
+
+                    <div class="fl">
+                        <p class="fs16">奥运狂欢</p>
+                        <p class="red">10万种书，直降40%</p>
+                        <img src="../imgs/index09_05.jpg" alt="">
+                        <p><span class="red">￥49</span>&emsp;<span class="td b3">￥79</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="book-right  fr">
+            <h2 class="fs24">新书畅销榜</h2>
+            <ul class="bookList">
+                <li class="bookListDetail clearfix">
+                    <span class="fl">1</span>
+                    <p class="fl">偷影子的人</p>
+                    <div class="clearfix"><img src="../imgs/booklist (5).jpg" alt="" class="fl">
+                        <span class="book-text fs14 fr">作为法国浪漫作品的代表，偷影子的人讲述的人一个有着钢琴梦的孩子，在成功实</span>
+                    </div>
+                </li>
+                <li class="bookListDetail clearfix">
+                    <span class="red fl">2</span>
+                    <p class="fl">瓦尔登湖</p>
+                    <div class="clearfix"><img src="../imgs/booklist (12).jpg" alt="" class="fl">
+                        <span class="book-text fs14 fr">从你的全世界路过，入选央视畅销好书，王家卫极力推荐，15000万次转发，超过4亿次阅读</span>
+                    </div>
+                </li>
+                <li class="bookListDetail clearfix">
+                    <span class="fl">3</span>
+                    <p class="fl">月亮与六便士毛姆</p>
+                    <div class="clearfix"><img src="../imgs/booklist (3).jpg" alt="" class="fl">
+                        <span class="book-text fs14 fr">从你的全世界路过，入选央视畅销好书，王家卫极力推荐，15000万次转发，超过4亿次阅读</span>
+                    </div>
+                </li>
+                <li class="bookListDetail clearfix">
+                    <span class="fl">4</span>
+                    <p class="fl">奥达的修行之路</p>
+                    <div class="clearfix"><img src="../imgs/booklist (7).jpg" alt="" class="fl">
+                        <span class="book-text fs14 fr">从你的全世界路过，入选央视畅销好书，王家卫极力推荐，15000万次转发，超过4亿次阅读</span>
+                    </div>
+                </li>
+                <li class="bookListDetail clearfix">
+                    <span class="fl">5</span>
+                    <p class="fl">追风筝的人</p>
+                    <div class="clearfix"><img src="../imgs/booklist (6).jpg" alt="" class="fl">
+                        <span class="book-text fs14 fr">从你的全世界路过，入选央视畅销好书，王家卫极力推荐，15000万次转发，超过4亿次阅读</span>
+                    </div>
+                </li>
+                <li class="bookListDetail clearfix">
+                    <span class="fl">6</span>
+                    <p class="fl">我亲爱的甜橙数</p>
+                    <div class="clearfix"><img src="../imgs/booklist (12).jpg" alt="" class="fl">
+                        <span class="book-text fs14 fr">从你的全世界路过，入选央视畅销好书，王家卫极力推荐，15000万次转发，超过4亿次阅读</span>
+                    </div>
+                </li>
+                <li class="bookListDetail clearfix">
+                    <span class=" fl">7</span>
+                    <p class="fl">海蒂和爷爷</p>
+                    <div class="clearfix"><img src="../imgs/booklist (9).jpg" alt="" class="fl">
+                        <span class="book-text fs14 fr">从你的全世界路过，入选央视畅销好书，王家卫极力推荐，15000万次转发，超过4亿次阅读</span>
+                    </div>
+                </li>
+
+
+
+
+            </ul>
+
+        </div>
+    </div>
+    <!--  乐购服装-->
+    <div class="container cloth-box floor">
+
+        <!-- 服装title -->
+        <div class="clearfix cloth-title">
+            <h2 class="fl fs22">服装</h2>
+            <ul class="fr">
+                <li class="fr fs16">精品鞋靴</li>
+                <li class="fr fs16">热销男装</li>
+                <li class="fr fs16  active">女装内衣</li>
+            </ul>
+        </div>
+
+
+
+        <div class="clearfix" id="aaa">
+            <!-- 服装菜单导航 -->
+            <div class="fl cloth-meau">
+                <img src="../imgs/index7_17.jpg" alt="">
+                <ul>
+                    <li><a href="#">女包</a><a href="#">防晒品</a><a href="#">短裤</a></li>
+                    <li><a href="#">女包</a><a href="#">防晒品</a><a href="#">短裤</a></li>
+                    <li><a href="#">女包</a><a href="#">防晒品</a><a href="#">短裤</a></li>
+                    <li><a href="#">女包</a><a href="#">女鞋</a><a href="#">全部分类&gt;</a></li>
+
+                </ul>
+
+            </div>
+            <!-- 服装轮播图 -->
+            <div class="fl cloth-slide">
+                <div>
+                    <!-- 服装轮播图 -->
+                    <div class="slidebox fl clothSlide">
+                        <ul class="innerwrapper">
+                            <li>
+                                <a href="#">
+                                    <img src="../imgs/clothslide (1).jpg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../imgs/clothslide (2).jpg" />
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="controls">
+                            <li class="current">1</li>
+                            <li>2</li>
+                        </ul>
+                        <span class="btnleft"></span>
+                        <span class="btnright"></span>
+                    </div>
+                    <!-- 轮播结束 -->
+                </div>
+                <img src="../imgs/index11_08.jpg" alt="">
+            </div>
+            <!-- 服装详情 -->
+            <div class="fr cloth-detail">
+                <img src="../imgs/index100_05.jpg" alt="">
+                <img src="../imgs/index100_05.jpg" alt="">
+                <img src="../imgs/index100_05.jpg" alt="">
+                <img src="../imgs/index100_11.jpg" alt="">
+                <img src="../imgs/index100_11.jpg" alt="">
+                <img src="../imgs/index100_11.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- 服装logo -->
+        <div class="cloth-logo ">
+            <img src="../imgs/logo13_11.jpg" alt="">
+            <img src="../imgs/logo13_12.jpg" alt="">
+            <img src="../imgs/logo13_13.jpg" alt="">
+            <img src="../imgs/logo13_14.jpg" alt="">
+            <img src="../imgs/logo13_15.jpg" alt="">
+            <img src="../imgs/logo13_16.jpg" alt="">
+            <img src="../imgs/logo13_17.jpg" alt="">
+            <img src="../imgs/index15_13.jpg" alt="">
+            <img src="../imgs/logo13_16.jpg" alt="">
+
+
+        </div>
+
+    </div>
+
+    <!--  乐购户外运动-->
+    <div class="container cloth-box floor">
+
+        <!-- 服装title -->
+        <ul class="clearfix">
+            <li class="fl fs22">户外运动</li>
+            <li class="fr fs16">运动潮流</li>
+            <li class="fr fs16">户外装备</li>
+            <li class="fr fs16">国际名品</li>
+        </ul>
+
+
+        <div class="clearfix">
+            <!-- 服装菜单导航 -->
+            <div class="fl cloth-meau">
+                <img src="../imgs/index7_17.jpg" alt="">
+                <ul>
+                    <li><a href="#">女装</a><a href="#">防晒品</a><a href="#">短裤</a></li>
+                    <li><a href="#">女包</a><a href="#">防晒品</a><a href="#">短裤</a></li>
+                    <li><a href="#">女包</a><a href="#">防晒品</a><a href="#">短裤</a></li>
+                    <li><a href="#">女包</a><a href="#">女鞋</a><a href="#">全部分类&gt;</a></li>
+
+                </ul>
+
+            </div>
+            <div class="fl cloth-slide">
+                <div>
+                    <!-- 户外运动轮播图 -->
+                    <div class="slidebox fl clothSlide">
+                        <ul class="innerwrapper">
+                            <li>
+                                <a href="#">
+                                    <img src="../imgs/sportslide (1).jpg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../imgs/sportslide (2).jpg" />
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="controls">
+                            <li class="current">1</li>
+                            <li>2</li>
+                        </ul>
+                        <span class="btnleft"></span>
+                        <span class="btnright"></span>
+                    </div>
+                    <!-- 轮播结束 -->
+
+                </div>
+                <img src="../imgs/index11_08.jpg" alt="">
+            </div>
+            <!-- 户外运动详情 -->
+            <div class="fr cloth-detail">
+                <img src="../imgs/160801-17862pc-C.jpg" alt="" class="product-img1">
+                <img src="../imgs/160801-17862pc-C.jpg" alt="" class="product-img1">
+                <img src="../imgs/160801-17862pc-C.jpg" alt="" class="product-img1">
+                <img src="../imgs/160729-12609pc-D.jpg" alt="" class="product-img2">
+                <img src="../imgs/160729-12609pc-D.jpg" alt="" class="product-img2">
+                <img src="../imgs/160729-12609pc-D.jpg" alt="" class="product-img2">
+            </div>
+        </div>
+
+        <!-- 服装logo -->
+        <div class="cloth-logo ">
+            <img src="../imgs/logo13_11.jpg" alt="">
+            <img src="../imgs/logo13_12.jpg" alt="">
+            <img src="../imgs/logo13_13.jpg" alt="">
+            <img src="../imgs/logo13_14.jpg" alt="">
+            <img src="../imgs/logo13_15.jpg" alt="">
+            <img src="../imgs/logo13_16.jpg" alt="">
+            <img src="../imgs/logo13_17.jpg" alt="">
+            <img src="../imgs/index15_13.jpg" alt="">
+            <img src="../imgs/logo13_16.jpg" alt="">
+
+
+        </div>
+
+    </div>
+    <!--  乐购听装童鞋婴儿装-->
+    <div class="container cloth-box floor">
+
+        <!-- 服装title -->
+        <ul class="clearfix">
+            <li class="fl fs22">童装&nbsp;童鞋&nbsp;婴儿装</li>
+            <li class="fr fs16">小潮童装</li>
+            <li class="fr fs16">婴儿装</li>
+            <li class="fr fs16">儿童服装</li>
+        </ul>
+
+
+        <div class="clearfix">
+            <!-- 婴幼儿服装菜单导航 -->
+            <div class="fl cloth-meau">
+                <img src="../imgs/index7_17.jpg" alt="">
+                <ul>
+                    <li><a href="#">女装</a><a href="#">防晒品</a><a href="#">短裤</a></li>
+                    <li><a href="#">女包</a><a href="#">防晒品</a><a href="#">短裤</a></li>
+                    <li><a href="#">女包</a><a href="#">防晒品</a><a href="#">短裤</a></li>
+                    <li><a href="#">女包</a><a href="#">女鞋</a><a href="#">全部分类&gt;</a></li>
+
+                </ul>
+
+            </div>
+            <!-- 服装轮播图 -->
+            <div class="fl cloth-slide">
+                <div>
+                    <!-- 婴幼儿轮播图 -->
+                    <div class="slidebox fl babySlide">
+                        <ul class="innerwrapper">
+                            <li>
+                                <a href="#">
+                                    <img src="../imgs/babyslide (1).jpg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../imgs/babyslide (2).jpg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../imgs/babyslide (3).jpg" />
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="controls">
+                            <li class="current">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                        <span class="btnleft"></span>
+                        <span class="btnright"></span>
+                    </div>
+                    <!-- 轮播结束 -->
+
+                </div>
+                <img src="../imgs/index11_08.jpg" alt="">
+            </div>
+            <!-- 服装详情 -->
+            <div class="fr cloth-detail">
+                <img src="../imgs/55260017675581_y.jpg" alt="" class="product-img1">
+                <img src="../imgs/55260018537435_1_o.png" alt="" class="product-img1">
+                <img src="../imgs/66160018538176_1_o.jpg" alt="" class="product-img1">
+                <img src="../imgs/187960019159976_1_o.jpg" alt="" class="product-img2">
+                <img src="../imgs/187980025644313_1_o.jpg" alt="" class="product-img2">
+                <img src="../imgs/aaa1a5e2e5e17b4287b378f1851b034837bdad5bb87.jpg" alt="" class="product-img2">
+            </div>
+        </div>
+
+        <!-- 服装logo -->
+        <div class="cloth-logo ">
+            <img src="../imgs/logo13_11.jpg" alt="">
+            <img src="../imgs/logo13_12.jpg" alt="">
+            <img src="../imgs/logo13_13.jpg" alt="">
+            <img src="../imgs/logo13_14.jpg" alt="">
+            <img src="../imgs/logo13_15.jpg" alt="">
+            <img src="../imgs/logo13_16.jpg" alt="">
+            <img src="../imgs/logo13_17.jpg" alt="">
+            <img src="../imgs/index15_13.jpg" alt="">
+            <img src="../imgs/logo13_16.jpg" alt="">
+        </div>
+
+    </div>
+    <!--  乐购家居日常-->
+    <div class="container cloth-box floor">
+
+        <!-- 家居title -->
+        <ul class="clearfix">
+            <li class="fl fs22">家居日常</li>
+        </ul>
+
+        <div class="clearfix">
+            <!-- 服装菜单导航 -->
+            <div class="fl">
+                <img src="../imgs/index21_05.jpg" alt="" class="home-img">
+            </div>
+            <!-- 家居详情 -->
+            <div class="fr home-detail">
+                <img src="../imgs/index22_05.jpg" alt="" class="product-img1">
+                <img src="../imgs/index22_05.jpg" alt="" class="product-img1">
+                <img src="../imgs/index22_05.jpg" alt="" class="product-img1">
+                <img src="../imgs/index22_05.jpg" alt="" class="product-img1">
+                <img src="../imgs/index23_08.jpg" alt="" class="product-img2">
+                <img src="../imgs/index23_08.jpg" alt="" class="product-img2">
+                <img src="../imgs/index23_08.jpg" alt="" class="product-img2">
+                <img src="../imgs/index23_08.jpg" alt="" class="product-img2">
+            </div>
+        </div>
+
+        <!-- 服装logo -->
+        <div class="cloth-logo ">
+            <img src="../imgs/logo13_11.jpg" alt="">
+            <img src="../imgs/logo13_12.jpg" alt="">
+            <img src="../imgs/logo13_13.jpg" alt="">
+            <img src="../imgs/logo13_14.jpg" alt="">
+            <img src="../imgs/logo13_15.jpg" alt="">
+            <img src="../imgs/logo13_16.jpg" alt="">
+            <img src="../imgs/logo13_17.jpg" alt="">
+            <img src="../imgs/index15_13.jpg" alt="">
+            <img src="../imgs/logo13_16.jpg" alt="">
+
+        </div>
+
+    </div>
+    <!--  乐购推广商品-->
+    <div class="container">
+        <ul class="product-title">
+            <li class="fs22 black fw">推广商品</li>
+        </ul>
+        <div class="product-detail clearfix">
+            <div class="fl">
+                <img src="../imgs/index25_12.jpg" alt="">
+                <p class="fs14 black">法国制奶嘴，无毒天然乳胶</p>
+                <p class="fs16 red">￥：189</p>
+                <p><img src="../imgs/index27_14.jpg" alt="">已有<span class="red">998</span>评价</p>
+            </div>
+            <div class="fl">
+                <img src="../imgs/index25_12.jpg" alt="">
+                <p class="fs14 black">法国制奶嘴，无毒天然乳胶</p>
+                <p class="fs16 red">￥：189</p>
+                <p><img src="../imgs/index27_14.jpg" alt="">已有<span class="red">998</span>评价</p>
+            </div>
+            <div class="fl">
+                <img src="../imgs/index25_12.jpg" alt="">
+                <p class="fs14 black">法国制奶嘴，无毒天然乳胶</p>
+                <p class="fs16 red">￥：189</p>
+                <p><img src="../imgs/index27_14.jpg" alt="">已有<span class="red">998</span>评价</p>
+            </div>
+            <div class="fl">
+                <img src="../imgs/index25_12.jpg" alt="">
+                <p class="fs14 black">法国制奶嘴，无毒天然乳胶</p>
+                <p class="fs16 red">￥：189</p>
+                <p><img src="../imgs/index27_14.jpg" alt="">已有<span class="red">998</span>评价</p>
+            </div>
+            <div class="fl">
+                <img src="../imgs/index25_12.jpg" alt="">
+                <p class="fs14 black">法国制奶嘴，无毒天然乳胶</p>
+                <p class="fs16 red">￥：189</p>
+                <p><img src="../imgs/index27_14.jpg" alt="">已有<span class="red">998</span>评价</p>
+            </div>
+            <div class="fl">
+                <img src="../imgs/index25_12.jpg" alt="">
+                <p class="fs14 black">法国制奶嘴，无毒天然乳胶</p>
+                <p class="fs16 red">￥：189</p>
+                <p><img src="../imgs/index27_14.jpg" alt="">已有<span class="red">998</span>评价</p>
+            </div>
+            <div class="fl">
+                <img src="../imgs/index25_12.jpg" alt="">
+                <p class="fs14 black">法国制奶嘴，无毒天然乳胶</p>
+                <p class="fs16 red">￥：189</p>
+                <p><img src="../imgs/index27_14.jpg" alt="">已有<span class="red">998</span>评价</p>
+            </div>
+            <div class="fl">
+                <img src="../imgs/index25_12.jpg" alt="">
+                <p class="fs14 black">法国制奶嘴，无毒天然乳胶</p>
+                <p class="fs16 red">￥：189</p>
+                <p><img src="../imgs/index27_14.jpg" alt="">已有<span class="red">998</span>评价</p>
+            </div>
+            <div class="fl">
+                <img src="../imgs/index25_12.jpg" alt="">
+                <p class="fs14 black">法国制奶嘴，无毒天然乳胶</p>
+                <p class="fs16 red">￥：189</p>
+                <p><img src="../imgs/index27_14.jpg" alt="">已有<span class="red">998</span>评价</p>
+            </div>
+            <div class="fl">
+                <img src="../imgs/index25_12.jpg" alt="">
+                <p class="fs14 black">法国制奶嘴，无毒天然乳胶</p>
+                <p class="fs16 red">￥：189</p>
+                <p><img src="../imgs/index27_14.jpg" alt="">已有<span class="red">998</span>评价</p>
+            </div>
+        </div>
+    </div>
+    <!--  乐购尾部-->
+    <div class="container-fluid foot">
+        <div class="container clearfix">
+            <div>
+                <img src="../imgs/222_11.png" alt="">
+                <img src="../imgs/222_13(1).png" alt="">
+                <img src="../imgs/222_15.png" alt="">
+                <img src="../imgs/222_11.png" alt="">
+            </div>
+            <ul>
+                <li>
+                    <img src="../imgs/logo_00.png" alt="">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>商家服务</h3>
+                </li>
+                <li>商家中心</li>
+                <li>运营服务</li>
+                <li>加入尾巴汇</li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>退换货</h3>
+                </li>
+                <li>自动深情退换货</li>
+                <li>退换货进度查询</li>
+                <li>退款方式和时间</li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>订单服务</h3>
+                </li>
+                <li>订单配送查询</li>
+                <li>订单状态说明</li>
+                <li>自动取消订单</li>
+                <li>自动修改订单</li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>支付方式</h3>
+                </li>
+                <li>购物流程</li>
+                <li>发票制度</li>
+                <li>账户管理</li>
+                <li>会员优惠</li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>购物指南</h3>
+                </li>
+                <li>购物流程</li>
+                <li>发票制度</li>
+                <li>账户管理</li>
+                <li>会员优惠</li>
+            </ul>
+        </div>
+        <div class="link">
+            <a href="#">公司简介</a>
+            <a href="#">nevtor Retions</a>
+            <a href="#">网站联盟</a>
+            <a href="#">乐购招商</a>
+            <a href="#">机构销售</a>
+            <a href="#">手机乐购</a>
+            <a href="#">官方Blog</a>
+            <a href="#">热词搜索</a>
+        </div>
+        <div class="copy">Copyright&copy;乐购网2004-2016，All Right Reseverd</div>
+    </div>
+    <!-- 顶部固定搜索栏 -->
+    <div class="fixTop container-fluid">
+        <div class="container">
+            <img src="../imgs/logo_00.png" alt="">
+        </div>
+    </div>
+
+    <!-- 侧边导航栏 -->
+    <div class="slideNav">
+        <ul>
+            <li bgc="#ceec5f" class="slideNav-bg1">推荐</li>
+            <li bgc="#a7d375" class="slideNav-bg2">图书</li>
+            <li bgc="#d7582f" class="slideNav-bg3">服装</li>
+            <li bgc="#b19bea" class="slideNav-bg4">运动</li>
+            <li bgc="#e17291" class="slideNav-bg5">家居</li>
+        </ul>
+    </div>
+
+    <!-- 回到顶部栏 -->
+    <div class="backTop">
+        <img src="../imgs/gototop_05.jpg" alt="">
+    </div>
+
+</body>
+
+</html>
